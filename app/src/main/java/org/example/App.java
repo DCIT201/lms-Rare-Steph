@@ -10,7 +10,7 @@ public class App {
 
         Library lib = new Library("Mathematics");
 
-        Book b = new Book("Good habits", "Nicole Edwards", 1320);
+        Book b = new Book("Good habits", "Nicole Edwards", 10);
 
  //Block of code to execute users information
         System.out.println("This is the user information we have in our system.");
@@ -22,11 +22,14 @@ public class App {
         System.out.println("                                     ");
 
  //methods be accessed within the book class
+        b.getAuthor();
+        b.getYearPublished();
+        b.getTitle();
+        b.setTitle("BeHappy");
+
         b.addBook("HappinessIsForAll");
         b.removeBook("MoneyIsGood", "Cole James");
         b.search("ArtOfMoneyMaking");
-        b.getTitle();
-        b.setTitle("BeHappy");
 
         System.out.println("                                    ");
 

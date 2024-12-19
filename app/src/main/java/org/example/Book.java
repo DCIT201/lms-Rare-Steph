@@ -11,11 +11,14 @@ public class Book {
           this.title = title;
           this.author = author;
           this.genre = genre;
+
+
      }
-//This method is used to get and set the title of the book
+//This method is used to get and set the title, author and year Published of the book
      public String getTitle() {
           return title;
      }
+     public String getAuthor() {return author;}
      public void setTitle(String title) {
           this.title = title;
      }
@@ -33,6 +36,10 @@ public class Book {
 //A method that allows a book to be deleted.
      public void removeBook(String remove, String author){
           System.out.println("The file: "+ remove + " was removed from your collection successfully.");
+     }
+
+     public int getYearPublished() {
+          return genre;
      }
 }
 //End of the book class
